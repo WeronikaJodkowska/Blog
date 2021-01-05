@@ -1,14 +1,24 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import permission_required
+
+from taggit.models import Tag
+
 from .models import Post
 from .forms import PostForm, PostDeleteForm
 
 
 def home(request):
-    posts = Post.objects.all()
+    tag_obj = None
+    if not tag:
+        posts = Post.objects.all()
+    else:
+        tag_obj = get_object_or_404(Tag, slug=tag)
+        posts = Post.objects.filter(tags__in=[tag_obj])
+
     return render(request, 'home.html',
                   {'section': 'home',
                    'posts': posts,
+                   'tag': tag_obj
                    })
 
 

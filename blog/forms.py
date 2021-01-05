@@ -7,7 +7,8 @@ class PostForm(ModelForm):
         model = Post
         fields = ['title',
                   'body',
-                  'slug']
+                  'slug',
+                  'tags']
 
 
 class PostDeleteForm(ModelForm):
