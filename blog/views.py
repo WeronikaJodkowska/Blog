@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import permission_required
 from .models import Post
 from .forms import PostForm, PostDeleteForm
 
@@ -20,6 +21,7 @@ def detail(request, slug=None):
                    })
 
 
+@permission_required('blog.add_post', raise_exception=True)
 def create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
@@ -36,6 +38,7 @@ def create(request):
                    })
 
 
+@permission_required('blog.change_post', raise_exception=True)
 def edit(request, pk=None):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
@@ -53,6 +56,7 @@ def edit(request, pk=None):
                    })
 
 
+@permission_required('blog.delete_post', raise_exception=True)
 def delete(request, pk=None):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
