@@ -5,6 +5,8 @@
         <a href="{{ post.get_absolute_url }}">
             {{ post.pk }} : {{ post }}
         </a>
+        [ <a href="{% url 'blog:edit' pk=post.pk %}">Edit</a> ]
+        [ <a href="{% url 'blog:delete' pk=post.pk %}">Delete</a> ]
         <br>
     {% endfor %}
 {% endblock %}
