@@ -2,7 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf07d0b6-eb3d-4dca-96f4-627c7a79bac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0004_post_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/cs/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/cs/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/en/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/eo/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/eo/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/es/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/es/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/fi/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/fi/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/he/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/he/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/it/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/it/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/ja/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/ja/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/nb/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/nb/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/nl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/nl/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/pt_BR/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/ru/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/tr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/tr/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/managers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/migrations/0002_auto_20150616_2121.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/migrations/0003_taggeditem_add_unique_index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogenv/lib/python3.8/site-packages/taggit/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +89,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

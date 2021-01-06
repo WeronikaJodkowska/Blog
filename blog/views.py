@@ -3,12 +3,22 @@ from django.contrib.auth.decorators import permission_required
 from .models import Post
 from .forms import PostForm, PostDeleteForm
 
+from taggit.models import Tag
 
-def home(request):
-    posts = Post.objects.all()
+
+def home(request, tag=None):
+    tag_obj = None
+
+    if not tag:
+        posts = Post.objects.all()
+    else:
+        tag_obj = get_object_or_404(Tag, slug=tag)
+        posts = Post.objects.filter(tags__in=[tag_obj])
+
     return render(request, 'home.html',
                   {'section': 'home',
                    'posts': posts,
+                   'tag': tag_obj
                    })
 
 
