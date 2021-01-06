@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import permission_required
+from django.core.paginator import Paginator
 from .models import Post
 from .forms import PostForm, PostDeleteForm
 
@@ -14,6 +15,10 @@ def home(request, tag=None):
     else:
         tag_obj = get_object_or_404(Tag, slug=tag)
         posts = Post.objects.filter(tags__in=[tag_obj])
+
+    paginator = Paginator(posts, 1)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
 
     return render(request, 'home.html',
                   {'section': 'home',
