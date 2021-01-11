@@ -3,6 +3,10 @@
 {% block title %}<h1>{{ post }}</h1>{% endblock %}
 
 {% block content %}
+    {% if post.image %}
+        <img class="post-img" src="{{ post.image_thumbnail.url }}">
+    {% endif %}
+
     <p>Posted {{ post.date|date:"M j, Y" }}</p>
     <p>Updated{{ post.updated }}</p>
     {% if post.author %}<p>{{ post.author }}</p>{% endif %}

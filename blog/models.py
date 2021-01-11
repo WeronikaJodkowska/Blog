@@ -3,6 +3,8 @@ from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
 from taggit.managers import TaggableManager
+from imagekit.models import ImageSpecField
+from pilkit.processors import ResizeToFill
 
 
 class Post(models.Model):
@@ -18,6 +20,13 @@ class Post(models.Model):
                                blank=True,
                                on_delete=models.CASCADE)
     tags = TaggableManager()
+    image = models.ImageField(default='',
+                              blank=True,
+                              upload_to='images')
+    image_thumbnail = ImageSpecField(source='image',
+                                     processors=[ResizeToFill(700, 150)],
+                                     format='JPEG',
+                                     options={'quality': 60})
 
     def __str__(self):
         return self.title
