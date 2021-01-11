@@ -1,0 +1,26 @@
+{
+  "name": "blogproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w static/css/base.scss -o static/css --output-style compressed",
+    "sync": "browser-sync start --proxy \"localhost:8000\" --files \"static/css/base.css\" \"templates/*/*.html\" --no-notify --no-open --reload-delay 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeronikaJodkowska/Blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeronikaJodkowska/Blog/issues"
+  },
+  "homepage": "https://github.com/WeronikaJodkowska/Blog#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "node-sass": "^5.0.0"
+  }
+}

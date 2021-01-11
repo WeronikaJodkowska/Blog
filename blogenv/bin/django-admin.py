@@ -1,4 +1,4 @@
-#!/home/weronika/Documents/Blogging Platform/blogenv/bin/python
+#!/home/weronika/Documents/blogproject/blogenv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
