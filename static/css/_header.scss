@@ -7,14 +7,15 @@
     position: fixed;
     top: 0;
     width: 100%;
-    line-height: 50px; }
+    line-height: 50px;
+  }
 
-&-brand {
-  text-transform: uppercase;
-  position: absolute;
-  left: 1em;
-  letter-spacing: 1px;
-}
+  &-brand {
+    text-transform: uppercase;
+    position: absolute;
+    left: 1em;
+    letter-spacing: 1px;
+  }
 
   &-menu {
     margin: 0;
@@ -71,10 +72,4 @@
       letter-spacing: 3px;
     }
   }
-}
-
-&-content {
-  // ...
-  background: rgba(0, 0, 0, 0.7);
-  // ...
 }

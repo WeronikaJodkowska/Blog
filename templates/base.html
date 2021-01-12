@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 <title>Site</title>
 </head>
@@ -17,7 +18,7 @@
             </li>
             {% if perms.blog.add_post %}
                 <li class="header-menu-li">
-                    <a class="header-menu-a {% if section == 'blog_create' %} header-menu-a-active {% endif %}" href="{% url 'blog:create' %}">Add new pos</a>
+                    <a class="header-menu-a {% if section == 'blog_create' %} header-menu-a-active {% endif %}" href="{% url 'blog:create' %}">Add new post</a>
                 </li>
             {% endif %}
         </ul>
@@ -35,13 +36,17 @@
         </div>
     </div>
 </div>
-{% block title %}{% endblock %}
-<p>
-    {% block content %}
-        Some default content
-    {% endblock %}
-
-{% include 'blog/_post_list.html' with heading='Latest posts' %}
-</p>
+<div class="main">
+    <div class="content">
+        {% block title %}{% endblock %}
+        {% block content %}Some default content{% endblock %}
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-ad">
+            Advertisment
+        </div>
+    </div>
+    {% include 'blog/_post_list.html' with heading='Latest posts' %}
+</div>
 </body>
 </html>
